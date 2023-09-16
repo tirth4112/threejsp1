@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Bootstrap Table with 3D Objects</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* Card Styles */
+        .card {
+            border: 2px solid #ccc;
+            padding: 2px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            background-color: #fff;
+            margin: 2px;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            background-color: #eeeaea;
+        }
+
+        .card-body {
+            height: 200px;
+            /* Increased the height of the 3D object container */
+            /* text-align: center; */
+            margin-right: 15px;
+            padding: 5px;
+        }
+
+        .card-footer {
+            background-color: #f8f9fa;
+            /* padding: 10px; */
+            text-align: center;
+            /* background-color: #f8f9fa; */
+            text-align: center;
+            display: none;
+            /* Initially hide the footer */
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+
+
+            background-color: rgba(248, 249, 250, 0.9);
+            /* Use RGBA with an alpha value (0.7 for 70% opacity) */
+
+        }
+
+        /* Footer Styles */
+        .footer-dark {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+
+
+        .card:hover .card-footer {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Low poly 3D Objects</h2>
+    </div>
+
+    <div class="container table-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="cell1" class="card-body"></div>
+                    <div class="card-footer">
+                        <!-- <p class="card-text">Low-Poly House Model</p> -->
+                        <p class="card-text">Category: Architecture</p>
+                        <p class="card-text">Polygon Count: 500</p>
+                        <p class="card-text">Textures: Yes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="cell2" class="card-body"></div>
+                    <div class="card-footer">
+                        <!-- <p class="card-text">Fire-breathing Pokémon - Charizard</p> -->
+                        <!-- <p class="card-text">Type: Fire/Flying</p> -->
+                        <p class="card-text">Height: 1.7m</p>
+                        <p class="card-text">Weight: 90.5kg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="cell3" class="card-body"></div>
+                    <div class="card-footer">
+                        <!-- <p class="card-text">Electric-type Pokémon - Pikachu</p> -->
+                        <!-- <p class="card-text">Type: Electric</p> -->
+                        <p class="card-text">Height: 0.4m</p>
+                        <p class="card-text">Weight: 6kg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="cell4" class="card-body"></div>
+                    <div class="card-footer">
+                        <!-- <p class="card-text">Water-type Pokémon - Squirtle</p> -->
+                        <!-- <p class="card-text">Type: Water</p> -->
+                        <p class="card-text">Height: 0.5m</p>
+                        <p class="card-text">Weight: 9kg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="cell5" class="card-body"></div>
+                    <div class="card-footer">
+                        <!-- <p class="card-text">Grass/Poison-type Pokémon - Bulbasaur</p> -->
+                        <!-- <p class="card-text">Type: Grass/Poison</p> -->
+                        <p class="card-text">Height: 0.7m</p>
+                        <p class="card-text">Weight: 6.9kg</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div id="cell6" class="card-body"></div>
+                    <div class="card-footer">
+                        <!-- <p class="card-text">Evolution Pokémon - Eevee</p> -->
+                        <!-- <p class="card-text">Type: Normal</p> -->
+                        <p class="card-text">Height: 0.3m</p>
+                        <p class="card-text">Weight: 6.5kg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center py-3 footer-dark">
+        <p>&copy; 2023 Your ThreeJs. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module" src="main.js"></script>
+
+    <script>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
